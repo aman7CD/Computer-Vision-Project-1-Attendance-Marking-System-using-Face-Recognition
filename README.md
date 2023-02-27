@@ -1,5 +1,5 @@
 # Attendance-Marking-System-using-Face-Recognition
-Used dlib, face_recognition , opencv-python, to detect and identify faces and then mark attendance in a text file.
+Used dlib, face_recognition, opencv-python, to detect and identify faces and then marked attendance in a text file.
 ## About the Project
 
 ### Working of the Project
@@ -8,7 +8,7 @@ Used dlib, face_recognition , opencv-python, to detect and identify faces and th
 3. In the Prediction Phase when a picture of an unknown person is passed to the model, recognition model converts the unfamiliar person’s Image into encoding.
 4. After converting an unknown person’s Image into encoding, it tries to find the most similar encoding based on the distance parameter. From the stored encodings,  the encoding with the least distance from the encoding of an unknown person will be the closest match.
 5. After getting the closest match encoding, I took the index of that encoding from that list, used indexing and find the detected person’s name.
-6. Then I used file handling to store the name of the detected person and the time of his entry in the class.
+6. Then I used file handling to store the name of the detected person with the time of his entry in the class/office.
 
 ### Libraries used in the Project
 #### dlib
@@ -19,4 +19,4 @@ Dlib is mostly used for face recognition purposes.It recognizes faces by estimat
 The face_recognition is a Python library and deep within, it employs dlib – a modern C++ toolkit that contains several machine learning algorithms.
 
 #### openCV
-OpenCV is a Python library that allows you to perform image processing and computer vision tasks. It provides a wide range of features, including object detection, face recognition, and tracking
+OpenCV is a Python library that allows you to perform image processing and computer vision tasks. It provides a wide range of features, including object detection, face recognition, and tracking.
